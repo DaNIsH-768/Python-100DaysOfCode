@@ -1,3 +1,4 @@
+# importing the random modulw
 import random
 
 letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -12,6 +13,7 @@ n_characters = int(input("How many special characters would you like? "))
 password = ""
 password_list = []
 
+# Adding random letters, numbers and characters to the list
 for i in range(0, n_letters):
     password_list.append(random.choice(letters))
 
@@ -21,6 +23,7 @@ for i in range(0, n_numbers):
 for i in range(0, n_characters):
     password_list.append(random.choice(characters))
 
+# Taking random char from list and adding it to the password
 for i in range(0, len(password_list)):
     char = random.choice(password_list)
     password += char
