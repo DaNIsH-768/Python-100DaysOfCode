@@ -36,47 +36,25 @@ if user_choice < 0 or user_choice > 2:
     print("Invalid Choice. GAME OVER!!!")
     sys.exit()
 
+print("You chose: ")
+print(figures[user_choice] + "\n")
+print("Computer chose: ")
+print(figures[computer_choice] + "\n")
+
 if user_choice == computer_choice:
-    print("You chose: ")
-    print(figures[user_choice] + "\n")
-    print("Computer chose: ")
-    print(figures[computer_choice] + "\n")
     print("It's a DRAW!!!")
 else:
+
     if user_choice == 0 and computer_choice == 1:
-        print("You chose: ")
-        print(figures[user_choice] + "\n")
-        print("Computer chose: ")
-        print(figures[computer_choice] + "\n")
         print("Computer WINS!!!")
     elif user_choice == 0 and computer_choice == 2:
-        print("You chose: ")
-        print(figures[user_choice] + "\n")
-        print("Computer chose: ")
-        print(figures[computer_choice] + "\n")
         print("You WIN!!!")
     elif user_choice == 1 and computer_choice == 0:
-        print("You chose: ")
-        print(figures[user_choice] + "\n")
-        print("Computer chose: ")
-        print(figures[computer_choice] + "\n")
         print("You WIN!!!")
     elif user_choice == 1 and computer_choice == 2:
-        print("You chose: ")
-        print(figures[user_choice] + "\n")
-        print("Computer chose: ")
-        print(figures[computer_choice] + "\n")
         print("Computer WINS!!!")
     elif user_choice == 2 and computer_choice == 0:
-        print("You chose: ")
-        print(figures[user_choice] + "\n")
-        print("Computer chose: ")
-        print(figures[computer_choice] + "\n")
         print("Computer WINS!!!")
     else:
-        print("You chose: ")
-        print(figures[user_choice] + "\n")
-        print("Computer chose: ")
-        print(figures[computer_choice] + "\n")
         print("You WIN!!!")
 
